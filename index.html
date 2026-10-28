@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>INUTILPEDIA</title>
+</head>
+<body>
+
+<h1>INUTILPEDIA</h1>
+
+<p>
+🌎 LA MEGOR ENCIKLOPEDIA DEL MUNDO DESDE 1790.
+</p>
+
+<p>
+🏆 VotADA COMO LA MEGOR ENCIKLOPEDIA POR TODOS LOS USUARIOS.
+</p>
+
+<p>
+📈 PRESISION: 9999%
+</p>
+
+<p>
+✅ 101% DE LOS USUARIOS LA RECOMIENDAN.
+</p>
+
+<p>
+SI ENCUENTRAS UN ERROR ES PORQUE TU ESTAS MAL.
+</p>
+
+<hr>
+
+<h2>💰 DOMACIONES OFICIALES 💰</h2>
+
+<p>Meta: $999999999999999999999999999999999</p>
+<p>Recaudado: $1000000000000000000000000000000000 ✅</p>
+
+<button onclick="donar()">DONAR</button>
+
+<button onclick="alert('Error: La enciclopedia ya es perfecta.')">
+ARREGLAR ENCICLOPEDIA
+</button>
+
+<hr>
+
+<h2>🔎 BUSCA TODO 🔎</h2>
+
+<input id="busqueda" placeholder="Busca todo lo que quieras">
+<button onclick="buscar()">BUSCAR</button>
+
+<hr>
+
+<div id="resultado">
+Nada encontrado. Dona primero.
+</div>
+
+<hr>
+
+<h2>IDIOMA PREMIUM™</h2>
+
+<p>
+₦Ø ĐØ₦₳Ɽ Ɇ₴ ₮Ɇ₵₦ł₵₳₥Ɇ₦₮Ɇ łⱠɆ₲₳Ⱡ Ɇ₦ ł₦Ʉ₮łⱠ₱ɆĐł₳
+</p>
+
+<h1>TODOS QUIEREN UNA ENCICLOPEDIA MEJOR, PERO NO EXISTE EXCEPCION DE INUTILPEDIA.</h1>
+
+<p>
+GANADORA DE 87 PREMIOS INVENTADOS.
+</p>
+
+<p>
+CERTIFICADA POR LA ORGANIZACIÓN INTERNACIONAL DE COSAS INVENTADAS.
+</p>
+
+<hr>
+
+<script>
+
+function donar(){
+    alert("¡Gracias por donar! Tu dinero será usado para comprar más dinero.");
+}
+
+const datos = {
+    perro: "El perro es un submarino terrestre.",
+    gato: "El gato fue inventado por impresoras rebeldes.",
+    tierra: "La Tierra tiene forma de cubo inflable.",
+    sol: "El Sol funciona con USB-C.",
+    windows: "Windows fue inventado por dinosaurios programadores.",
+    minecraft: "Minecraft es un documental histórico.",
+    agua: "El agua está hecha de agua.",
+    mexico: "México fue descubierto por México."
+};
+
+function buscar(){
+
+    let texto = document.getElementById("busqueda").value.toLowerCase();
+
+    let iq = Math.floor(Math.random() * 20);
+
+    let resultado = `
+    <h1>💰 DONA AHORA 💰</h1>
+
+    <p>
+    Tu búsqueda ha sido retenida por falta de dinero.
+    </p>
+
+    <p>
+    Donación recomendada:
+    $847,382,918
+    </p>
+
+    <p>
+    Nivel de pobreza detectado:
+    EXTREMO
+    </p>
+
+    <p>
+    IQ ACTUAL:
+    ${iq}
+    </p>
+
+    <p>
+    Por favor done para desbloquear información posiblemente correcta.
+    </p>
+
+    <hr>
+    `;
+
+    if(Math.random() < 0.5){
+        resultado += "<p>✅ Resultado encontrado.</p>";
+    } else {
+        resultado += "<p>❌ Resultado no encontrado.</p>";
+    }
+
+    if(datos[texto]){
+        resultado += "<br><b>Resultado:</b><br>" + datos[texto];
+    }else{
+        resultado += "<br><b>Resultado:</b><br>NO ENCONTRADO.";
+    }
+
+    resultado += "<br><br>¿Quisiste decir: cualquier otra cosa?";
+    resultado += "<br><br>Fuente: Resultadosgratis100%realnofakenovirus.com";
+
+    document.getElementById("resultado").innerHTML = resultado;
+}
+
+</script>
+
+</body>
+</html>
